@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="articles/index.html">Статьи</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="gallery.html">Галерея изображений</a></li>
+				<li><a class="active" href="registration.html"><b>Регистрация</b></a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	<aside>
+	</aside>
+	<main>
+		<form action="submit">
+			<label name="family">Фамилия: <input type="text" name="family"></label><br>
+			<label name="name">Имя: <input type="text" name="name"></label><br>
+			<label name="surname">Отчество: <input type="text" name="surname"></label><br>
+			Добавьте фотографию <input type="file" name="photo"></label><br>
+			<label name="mail">Адрес электронной почты: <input type="e-mail" name="mail"></label><br>
+			<label name="pass">Пароль: <input type="password" name="pass"></label><br>
+			<label name="url">Адрес сайта: <input type="url" name="url" value="http://"></label><br>
+			<label name="sex">Выберите пол: 
+				<select name="sex">
+					<option value="female">Мужской</option>
+					<option value="male">Женский</option>
+				</select><br>
+			</label>
+			<label>Выберите дату рождения: 
+				<input type="date" name="bithday">
+			</label><br>
+			
+			<label name="about">О себе: 
+				<textarea name="about">
+				</textarea>
+			</label><br>
+			<input type="submit" value="Зарегистрироваться">
+			<input type="reset" value="Очистить форму">
+		</form>
+
+	</main>
+	<footer>
+		Cyxapb96 &copy
+	</footer>
+</body>
+</html>
