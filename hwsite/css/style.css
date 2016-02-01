@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic);
+
+body {
+	margin: 0 auto; /* Центрируем содержимое относительно окна браузера */
+	max-width: 1000px; /* Ширина сайта */
+	font-size: 1.3em;	
+}
+
+/* Header */
+
+
+/* Меню */
+	/* Оформление контейнера меню */
+nav {
+	background-image: url("../img/bg-page.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	margin-bottom: 20px;
+	padding: 10px 0;
+}
+
+	/* Сбрасываем стили списка в меню */
+.top-menu {
+	display: block;
+	width: 25%; 
+	background-color: #666; 
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.8em;
+}
+
+.top-menu li {
+	display: block;
+}
+	
+	/* Оформление ссылок меню */
+.top-menu a {
+	display: block;
+/*	box-sizing: border-box; */
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 15px;
+	border-bottom: 2px solid #999;
+/*	background-color: #666; */
+}
+
+/* Активная ссылка меню */
+.top-menu .active { 
+	background-color: #c8c8c8;
+	text-decoration: none;
+	color: #000;
+	border-bottom: 2px solid green;
+	font-weight: bold;
+}
+
+.top-menu a:hover:not(.active) {
+	background-color: coral;
+}
+
+
+
+/* Анонсы статей .feautered-post */
+	/* Заголовок анонса */
+.featured-post .title {
+	margin-bottom: 10px;
+}
+.featured-post .title h1 {
+	display: inline;
+	margin: 0;
+	font-family: "PT Sans Caption", sans-serif;
+	font-size: 1.5em;
+	color: cadetblue;
+}
+
+.featured-post .title a {
+	text-decoration: none; 
+	border-bottom: 2px dashed cadetblue;
+}
+
+.featured-post .title a:hover {
+	font-style: italic;
+}
+
+	/* Краткое описание статьи*/
+.featured-post .announce-post {
+	background-color: cornsilk;
+	color: dimgray;
+	font-style: italic;
+}
+
+	/* ссылка читать далее */
+.featured-post .announce-post a:hover {
+	text-decoration: none;
+	color: cadetblue;
+}
+
+	/* Перейти к комментариям */
+.featured-post .comment {
+	font-size: 0.75em;
+	color: #666;
+}
+
+
+/*Оформление содержимого статьи*/
+	/* Заголовок */
+.post .title {
+	text-align: center;
+	color: cadetblue;
+	font-size: 1.5em;
+	margin: 30px 0;
+}
+
+.post p:first-letter {
+	color: red;
+	font-family: "Tahoma";
+	font-size: 1.5em;
+}
+
+.post p {
+	text-indent: 2em;
+}
+
+	/* картинки в статье*/
+.post img {
+	display: block; /*преобразуемм в блочный чтобы отступы воспринимались*/
+	margin: 2em auto; /*центрируем на странице*/
+}
+
+
+
+
+/* Список каталога */
+
+.catalog {
+	width: 350px;
+}
+
+.catalog > li {
+	list-style: url(../img/tick_octagon.png);
+	font-size: 1em;
+	background-color: antiquewhite;
+}
+
+.catalog > li > ul {
+	list-style: url("../img/arrow_join.png");
+	font-size: 0.7em;
+	background-color: azure;
+}
+
+.catalog ul > li:nth-child(2):after {
+	content: "  новинка";
+	background-color: coral;
+	vertical-align: super;
+	font-size: 0.8em;
+}
+
+
+
+/* Оформление страницы галереи */
+figure {
+	display: inline-block;
+	margin: 10px;
+	border: 2px dashed gray;
+	width: 300px;
+	vertical-align: baseline;
+}
+
+figure:hover {
+	border-color: transparent;
+}
+	/* Миниатюры в галерее */
+figure img {
+	display: block;
+	box-sizing: border-box;
+	margin: 10px auto;
+	max-width: 250px; /* Размер миниатюр в галерее*/
+}
+
+	/*Подпись к картинкам-миниатюрам */
+figure figcaption {
+	box-sizing: border-box;	
+	padding: 10px;
+	font-size: 0.7em;
+	font-style: italic;
+	text-transform: uppercase;
+	border-top: 1px dashed gray;
+}
+
+/*комментарии к статьям*/
+
+.comment {
+	margin-top: 20px;
+}
+	/*Автор коммментария*/
+.comment .comment-author {
+	margin: 10px 0;
+	font-size: 1em;
+	font-weight: bold;
+}
+	/*Текст комментария*/
+.comment .comment-text {
+	margin-left: 4em;
+	font-size: 0.7em;
+	font-style: italic;
+}
+
+/* Footer */
+footer {
+	margin-top: 20px;
+	border: 1px solid lightgray;
+	padding: 10px;
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+.gallary {
+	background: url(../img/icewindow.jpg) repeat fixed;
+}
+
+/* Форма регистрации */
+.regform {
+	margin: 20px 0;
+}
+
+.regform .regform-table {
+	width: 50%;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+.regform-table td {
+	padding: 5px 10px;
+	font-size: 0.8em;
+}
+
+.regform input {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.regform input:not([type="radio"]):focus {
+	background-color: beige;
+	color: dimgrey;
+}
+
+.regform input[name="family"],
+.regform input[name="name"],
+.regform input[name="surname"] {
+	text-transform: capitalize;
+}
+
+.regform input[type="password"],
+.regform input[type="url"] {
+	width: 75%;
+}
+
+.regform input[type="radio"] {
+	display: inline;
+	box-sizing: content-box;
+	max-width: 5%;
+}
+
+.regform textarea {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.regform input[type="submit"] {
+	margin: 20px auto;
+	width: 50%;
+	background-color: cornflowerblue;
+	border-color: crimson;
+	border-radius: 10px;
+	color:antiquewhite;
+	font-size: 1em;
+}
+
+.regform input[type="submit"]:active {
+	background-color: crimson;
+}
+
+.regform input[type="submit"]:hover {
+	background-color: lightgreen;
+	border-color: green;
+}
+
+.regform input[type="reset"] {
+	width: 30%;
+	margin-left: auto;
+	color: darkgray;
+}

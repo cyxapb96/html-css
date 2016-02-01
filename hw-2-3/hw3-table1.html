@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ДЗ-3. Таблица 1</title>
+	<link href="table.css" rel="stylesheet">
+</head>
+<body>
+	<div class="title">Таблица 1</div>
+	<table class="first">
+		<tr>
+			<td rowspan="3"></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>		
+	</table>
+	<div class="title">Таблица 2</div>
+	<table class="second">
+		<tr>
+			<td colspan="2"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="2" rowspan="2">
+				<table class="in-second">
+					<tr>
+						<td></td>
+						<td rowspan="3">
+							<br>
+							<br>
+							<br>
+						</td>
+						<td rowspan="2"></td>
+					</tr>
+					<tr>
+						<td rowspan="2"></td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+	</table>
+	<div class="title">Форма регистрации</div>
+	<form action="#"
+		method="get">
+		<table class="form-table">
+			<tr>
+				<td>
+					<label for="family-field">
+						Фамилия
+					</label>
+				</td>
+				<td>
+					<input type="text"
+						id="family-field"
+						name="family">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="name-field">
+						Имя
+					</label>
+				</td>
+				<td>
+					<input type="text"
+						id="name-field"
+						name="name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="sex-field">
+						Ваш пол
+					</label>
+				</td>
+				<td>
+					<input type="radio"
+						id="sex-field"
+						name="sex"
+						value="male"
+						checked> Мужской <br>
+					<input type="radio"
+						name="sex"
+						value="female"> Женский
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<a href="#"
+						action="submit">
+						Отправить
+					</a>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

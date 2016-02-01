@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="top-menu">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="articles/index.html">Статьи</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="gallery.html">Галерея изображений</a></li>
+				<li><a class="active" href="registration.html"><b>Регистрация</b></a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	<aside>
+	</aside>
+	<main>
+		<form class="regform" action="submit">
+			<table class="regform-table">
+				<tr>
+					<td>
+						<label for="family-field" name="family">
+							Фамилия:
+						</label>
+					</td>
+					<td>
+						<input id="family-field" type="text" name="family" placeholder="Ввдете фамилию">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="name-field" name="name">
+							Имя:
+						</label>
+					</td>
+					<td>
+						<input id="name-field" type="text" name="name" placeholder="Введите имя">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="surname-field" name="surname">
+							Отчество:
+						</label>
+					</td>
+					<td>
+						<input id="surname-field" type="text" name="surname" placeholder="Введите отчество">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="addfoto-field" name="addfoto">
+							Добавьте фотографию:
+						</label>
+					</td>
+					<td>
+						<input id="addfoto-field" type="file" name="addphoto">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="email-field" name="email">
+							Укажите e-mail:
+						</label>
+					</td>
+					<td>
+						<input id="email-field" type="e-mail" name="email">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<label for="password-field" name="password">
+							Введите пароль:
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input id="password-field" type="password" name="password">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<label for="site-field" name="site">
+							Адрес сайта:
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input id="site-field" type="url" name="url" value="http://">
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">
+						<label for="sex-field">
+							Укажите пол:
+						</label>
+					</td>
+					<td>
+						<label name="sex">
+							<input id="sex-field" type="radio" name="sex" value="male" checked>
+							Мужской
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label name="sex">
+							<input type="radio" name="sex" value="female">
+							Женский
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="data-field" name="birthday">
+							Дата рождения:
+						</label>
+					</td>
+					<td>
+						<input id="data-field" type="date" name="birthday">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="about-field" name="about">
+							О себе:
+						</label>
+					</td>
+					<td>
+						<textarea id="about-field" name="about" rows="5">
+							
+						</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="Зарегистрироваться">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="reset" value="Очистить форму">
+					</td>
+				</tr>
+			</table>
+		</form>
+
+	</main>
+	<footer>
+		Cyxapb96 &copy
+	</footer>
+</body>
+</html>
